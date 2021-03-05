@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Przelicznik</title>
-  <script src="../src/script.ts" defer></script>
+  <script src="../src/Setup.ts" defer></script>
 </head>
 <body>
   <main>
@@ -13,21 +13,21 @@
       <form action="">
         <label>
           Golden coins
-          <input type="number" id="gold" name="gold">
+          <input type="number" id="gold" name="gold" value="0" min="0">
         </label>
         <label>
           Silver coins
-          <input type="number" id="silver" name="silver">
+          <input type="number" id="silver" name="silver" value="0" min="0">
         </label>
         <label>
           Copper coins
-          <input type="number" id="copper" name="copper">
+          <input type="number" id="copper" name="copper" value="0" min="0">
         </label>
         <button type="submit" id="exchange">Exchange</button>
       </form>
     </section>
     <section>
-      <p id="result">Result</p>
+      <p id="result">Total</p>
     </section>
   </main>
 </body>
