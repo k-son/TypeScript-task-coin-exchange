@@ -1,4 +1,18 @@
 export class Exchanger {
+  constructor(
+    private gold: number, 
+    private silver: number, 
+    private copper: number
+  ) {}
+
+  public toCopper():number {
+    const goldToCopper = (this.gold * 20) * 12;
+    const silverToCopper = this.silver * 12;
+    return goldToCopper + silverToCopper + this.copper;
+  }
+}
+
+/* export class Exchanger {
   private gold: number;
   private silver: number;
   private copper: number;
@@ -14,4 +28,4 @@ export class Exchanger {
     const silverToCopper = this.silver * 12;
     return goldToCopper + silverToCopper + this.copper;
   }
-}
+} */
